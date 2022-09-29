@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <!--Icon link-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
+    <!--Scroll revel js-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -36,7 +37,7 @@
             <a href="#" class="explore">Explore</a>
         </div>
         <div class="rocket_icon">
-            <img src="rocket-png-40794.png" alt="rocket_icon">
+            <img class="rock" src="rocket-png-40794.png" alt="rocket_icon">
 
 
             <div class="social">
@@ -76,6 +77,25 @@
             nav.style.width = '0';
             list.style.transition = '.7s';
             list.style.padding = '0';
+        });
+
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('.text', {
+            origin: 'left'
+        });
+        ScrollReveal().reveal('.rock', {
+            origin: 'top'
+        });
+        ScrollReveal().reveal('.social i', {
+            delay: 500,
+            origin: 'right',
+            interval: 200
         });
     </script>
 </body>
