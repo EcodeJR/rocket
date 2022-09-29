@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Icon link-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+
+<body>
+    <div class="hero">
+
+        <div class="text">
+
+            <nav id="nav">
+                <div class="btn">
+                    <i class="uil uil-rocket" id="open"></i>
+                    <i class="uil uil-multiply" id="close" style="display: none;"></i>
+                </div>
+                <ul id="ul">
+                    <li><a href="#" class="a">Jokes</a></li>
+                    <li><a href="#" class="a">Planets</a></li>
+                    <li><a href="#" class="a">Jets</a></li>
+                    <li><a href="#" class="a">Space</a></li>
+                    <li><a href="#" class="a">Seas</a></li>
+                </ul>
+            </nav>
+
+            <h1>SPACE-<span>X</span></h1>
+            <p>Across the sea of space, the stars are other suns.<br><span>- Carl Sagan.</span></p>
+            <a href="#" class="explore">Explore</a>
+        </div>
+        <div class="rocket_icon">
+            <img src="rocket-png-40794.png" alt="rocket_icon">
+
+
+            <div class="social">
+                <i class="uil uil-facebook-f"></i>
+                <i class="uil uil-dribbble"></i>
+                <i class="uil uil-instagram-alt"></i>
+                <i class="uil uil-linkedin"></i>
+                <i class="uil uil-slack"></i>
+                <i class="uil uil-telegram-alt"></i>
+                <i class="uil uil-twitter"></i>
+                <i class="uil uil-youtube"></i>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        var open = document.getElementById('open');
+        var close = document.getElementById('close');
+        var nav = document.getElementById('nav');
+        var list = document.getElementById('ul');
+
+
+        open.addEventListener('click', function() {
+            open.style.display = 'none';
+            close.style.display = 'block';
+            nav.style.transition = '.7s';
+            nav.style.width = '100%';
+            list.style.transition = '.7s';
+            list.style.padding = '0 20px';
+        });
+        close.addEventListener('click', function() {
+            close.style.display = 'none';
+            open.style.display = 'block';
+            nav.style.transition = '.7s';
+            nav.style.width = '0';
+            list.style.transition = '.7s';
+            list.style.padding = '0';
+        });
+    </script>
+</body>
+
+</html>
